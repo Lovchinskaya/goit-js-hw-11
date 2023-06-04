@@ -21,7 +21,6 @@ function onSearch(event) {
     photoApiService.resetPage();
     photoApiService.fetchPhoto().then(showSearchMarkup).catch(error => error.massage);
     loadMoreBtn.classList.remove('is-hidden');
-    
 };
 
 function onLoadMoreBtnClick() {
