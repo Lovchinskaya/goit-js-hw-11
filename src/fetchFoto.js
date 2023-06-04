@@ -1,14 +1,12 @@
 import Notiflix from 'notiflix';
 import axios from 'axios';
 
-const axios = require('axios').default;
-
-export default class PhotoApiService {
-    constructor() {
-        this.searchQuery = '';
-        this.page = 1;
-        this.perPage = 40;
-    }
+    export default class PhotoApiService {
+        constructor() {
+            this.searchQuery = '';
+            this.page = 1;
+            this.perPage = 40;
+        }
 
     async fetchPhoto() {
         try {
