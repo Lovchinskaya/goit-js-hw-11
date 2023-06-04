@@ -2,7 +2,7 @@ import Notiflix from 'notiflix';
 import axios from 'axios';
 
 const axios = require('axios').default;
-
+const KEY = '37013770-4fd46202a1ea52ee31e31a9bd';
 export default class PhotoApiService {
     constructor() {
         this.searchQuery = '';
