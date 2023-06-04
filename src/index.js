@@ -2,6 +2,7 @@ import PhotoApiService from './fetchFoto';
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
+
 const searchForm = document.querySelector('#search-form');
 const loadMoreBtn = document.querySelector('.load-more');
 const galleryInfoContainer = document.querySelector('.gallery');
