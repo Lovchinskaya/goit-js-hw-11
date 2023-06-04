@@ -2,7 +2,7 @@ import Notiflix from 'notiflix';
 import axios from 'axios';
 
 const axios = require('axios').default;
-const KEY = '37013770-4fd46202a1ea52ee31e31a9bd';
+
 export default class PhotoApiService {
     constructor() {
         this.searchQuery = '';
@@ -12,7 +12,7 @@ export default class PhotoApiService {
 
     async fetchPhoto() {
         try {
-            const response = await axios.get(`https://pixabay.com/api/?key=${KEY}&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&page=${this.page}&per_page=${this.perPage}`);
+            const response = await axios.get(`https://pixabay.com/api/?key=37013770-4fd46202a1ea52ee31e31a9bd&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&page=${this.page}&per_page=${this.perPage}`);
 
             const { hits, totalHits } = response.data;
             
