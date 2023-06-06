@@ -33,7 +33,8 @@ import axios from 'axios';
             console.log(error);
         }
     }
-        
+       
+    
 resetPage() {
         this.page = 1;
     }
