@@ -1,5 +1,6 @@
 import Notiflix from 'notiflix';
 import axios from 'axios';
+import {loadMoreBtn} from './index'
 
     export default class PhotoApiService {
         constructor() {
@@ -18,7 +19,7 @@ import axios from 'axios';
                 Notiflix.Notify.failure("Sorry, there are no images matching your search query. Please try again.");
             }
 
-            if (this.page >= (totalHits / this.perPage)) {
+            if (this.page >= Math.ceil(totalHits / this.perPage)) {
                 Notiflix.Notify.warning("We're sorry, but you've reached the end of search results.");
                 loadMoreBtn.classList.add('is-hidden')
             } else {

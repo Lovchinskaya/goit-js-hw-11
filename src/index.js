@@ -56,7 +56,7 @@ function showSearchMarkup({ hits }) {
         .join('')
 
     galleryInfoContainer.insertAdjacentHTML('beforeend', markup);
-    
+
     let lightbox = new SimpleLightbox('.gallery a', {
     captionDelay: 250
     });
@@ -64,3 +64,5 @@ function showSearchMarkup({ hits }) {
 
     return lightbox;
 }
+
+export {loadMoreBtn}
